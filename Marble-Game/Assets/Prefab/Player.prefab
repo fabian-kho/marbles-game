@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2393018142288249278}
   - component: {fileID: 2393018142288249277}
   - component: {fileID: 2393018142288249276}
-  - component: {fileID: 2393018142288249267}
   - component: {fileID: 2393018142288249272}
   - component: {fileID: 166732225}
+  - component: {fileID: 626116801}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -100,19 +100,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2393018142288249267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2393018142288249266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9777909f08145b2a14e39628d3a686, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!54 &2393018142288249272
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -142,3 +129,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 3582238621b88490488aa2427f67820f, type: 2}
+--- !u!114 &626116801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2393018142288249266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9777909f08145b2a14e39628d3a686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
