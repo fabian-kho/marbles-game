@@ -6,8 +6,17 @@ public class CollisionCounter : MonoBehaviour
 {
     [SerializeField] CharacterStats stats;
 
+    
     private void OnTriggerEnter(Collider other)
     {
+        if(other.CompareTag("Hole"))
+        {
+            stats.Initialize();
+        }
+        if (other.CompareTag("Points"))
+            stats.points++;
+
         stats.collisionCount += 1;
     }
+
 }

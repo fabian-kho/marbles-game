@@ -8,7 +8,7 @@ public class ButtonScript : MonoBehaviour
 {
     // SerializeField: im Inspektor sichtbar machen
     [SerializeField] private UnityEvent PressedEvent;
-    [SerializeField] private GameObject TargetPlatform;
+    public GameObject TargetPlatform;
     [SerializeField] private AudioClip buttonSfx;
 
     private void OnTriggerEnter(Collider other)
@@ -19,6 +19,13 @@ public class ButtonScript : MonoBehaviour
             AudioSource.PlayClipAtPoint(buttonSfx, Camera.main.transform.position);
             // verknüpftes Event auslösen
             PressedEvent.Invoke();
+            
+
         }
     }
+
+
+
+   
 }
+

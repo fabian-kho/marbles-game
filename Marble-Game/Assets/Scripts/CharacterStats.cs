@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
+
 public class CharacterStats : ScriptableObject
 {
     [Header("Spieler Stats")]
@@ -14,6 +15,16 @@ public class CharacterStats : ScriptableObject
     public int initCollisionCount = 0;
 
     private void Awake()
+    {
+        Initialize();
+    }
+
+    private void OnEnable()
+    {
+        Initialize();
+    }
+
+    public void Initialize()
     {
         points = initPoints;
         health = initHealth;

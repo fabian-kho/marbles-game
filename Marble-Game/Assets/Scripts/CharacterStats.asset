@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c62ef46a1b7854b39a368962b0c86ef5, type: 3}
-  m_Name: PlayerStats
+  m_Name: CharacterStats
   m_EditorClassIdentifier: 
   points: 0
+  initPoints: 0
   health: 10
+  initHealth: 10
+  collisionCount: 0
+  initCollisionCount: 0
