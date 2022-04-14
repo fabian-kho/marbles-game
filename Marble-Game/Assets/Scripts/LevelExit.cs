@@ -11,7 +11,7 @@ public class LevelExit : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(LevelId);
+            SceneManager.LoadScene("Main Menu");
         }
     }
 }

@@ -15,6 +15,7 @@ public class CollisionCounter : MonoBehaviour
         if (other.CompareTag("Points")){
             //stats.highScore++;
             ScoreManager.instance.AddPoint();
+            
         }
     }
 
