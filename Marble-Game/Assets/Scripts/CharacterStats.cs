@@ -8,6 +8,8 @@ using UnityEngine;
 public class CharacterStats : ScriptableObject
 {
     [Header("Spieler Stats")]
+    public int score = 0;
+    public int initScore = 0;
     public int highScore = 0;
     public int initPoints = 1;
     public int health = 10;
@@ -30,7 +32,7 @@ public class CharacterStats : ScriptableObject
 
     public void Initialize()
     {
-        highScore = initPoints;
+        score = initScore;
         health = initHealth;
         collisionCount = initCollisionCount;
     }
@@ -62,7 +64,12 @@ public class CharacterStats : ScriptableObject
      public int GetHighScore(){
          return highScore;
      }
-
+     public int GetScore(){
+        return score;
+     }
+     public void SetScore(int sCore=0){
+        score = sCore;
+     }
      public void SetHighScore(int score=0){
             highScore = score;
      }

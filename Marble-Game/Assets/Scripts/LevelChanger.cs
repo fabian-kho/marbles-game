@@ -34,7 +34,7 @@ public static class LevelChanger
         while(!asynchOperation.isDone) yield return null;
     }
     public static void LoaderCallback(){
-        //Triggered after the first Update wich lets the screen referesh
+        //Triggered after the first Update wich lets the screen refresh
         //Execute the loader callback action wich will load the target scene
         if(onLoaderCallback != null){
             onLoaderCallback();
