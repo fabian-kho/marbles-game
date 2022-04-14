@@ -9,7 +9,7 @@ public class NextLevel : MonoBehaviour
         
         Movement component = other.gameObject.GetComponent<Movement>();
         if(component != null){
-            LevelManager.Load(LevelManager.Scene.Level2);    
+            LevelChanger.Load(LevelChanger.Scene.Level2);    
         }
     }
 }
