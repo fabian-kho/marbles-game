@@ -6,6 +6,8 @@ public class PointCollect : MonoBehaviour
 {
     public AudioClip pickUpSound;
 
+
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -13,5 +15,6 @@ public class PointCollect : MonoBehaviour
             Destroy(this.gameObject);
             AudioSource.PlayClipAtPoint(pickUpSound, Camera.main.transform.localPosition);
         }
+        
     }
 }
